@@ -14,7 +14,7 @@ function addRemoveFromArray(commands) {
         }
     }
     let string = arr.join('\n');
-    console.log(arr.length === 0 ? 'empty' : arr.join('\n'));
+    console.log(arr.length === 0 ? 'Empty' : arr.join('\n'));
 }
 
 // addRemoveFromArray(["add",

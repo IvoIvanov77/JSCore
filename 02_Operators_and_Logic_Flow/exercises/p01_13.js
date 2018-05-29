@@ -46,6 +46,18 @@ function p05_gradsToDegrees(grads) {
     console.log(degree % 360);
 }
 
+//100/100 judge
+function gradsToDegrees(grads) {
+    grads %= 400;
+    let degrees = (360 / 400) * grads;
+
+    if (degrees < 0) {
+        degrees += 360;
+    }
+
+    console.log(degrees);
+}
+
 function p06_compoundInterest(input) {
     let sum = input[0];
     let interestRate = input[1] / 100;

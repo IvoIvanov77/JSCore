@@ -20,19 +20,21 @@
 //
 // }
 
-let chop = (n) => n / 2;
-let dice = (n) => Math.sqrt(n);
-let spice = (n) => n + 1;
-let bake = (n) => n * 3;
-let fillet = (n) => n * 0.8;
-
 function solve(input){
+    let functions = {
+        "chop" : (n) => n / 2,
+        "dice" : (n) => Math.sqrt(n),
+        "spice" : (n) => n + 1,
+        "bake" : (n) => n * 3,
+        "fillet" : (n) => n * 0.8
+    };
+
     let number = input[0];
     for(let i = 1; i < input.length; i ++){
-        let f = input[i];
+        let f = functions[input[i]];
         number = f(number);
         console.log(number);
     }
 }
-// solve([32, "chop", "chop", "chop", "chop", "chop"])
-solve([9, dice, spice, chop, bake, fillet])
+solve([32, "chop", "chop", "chop", "chop", "chop", "bake"]);
+// solve([9, dice, spice, chop, bake, fillet])

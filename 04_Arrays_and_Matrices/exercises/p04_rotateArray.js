@@ -3,7 +3,8 @@
  */
 
 function rotateArray(arr) {
-    let n = arr.pop();
+    let n = arr.pop() % arr.length;
+
     for(let i = 0; i < n; i++){
         arr.unshift(arr.pop())
     }
@@ -12,4 +13,4 @@ function rotateArray(arr) {
 
 
 
-// rotateArray([1, 2, 3, 4, 2]);
+rotateArray([1, 2, 3, 4, 2]);
