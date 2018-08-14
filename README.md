@@ -11,3 +11,8 @@ SoftUni JavaScript Fundamentals course, part of JS Core Module
 ### - Sets and maps, destructuring
 ### - Canvas 2D + DOM and events
 
+## Certificate:
+
+![55092](https://user-images.githubusercontent.com/16088420/44110791-5479e3ba-a009-11e8-8783-bde37556fa4f.jpg)
+
+
